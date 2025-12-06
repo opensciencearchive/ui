@@ -1,0 +1,11 @@
+/*
+ * OSA Design System
+ * Open Science Archive — Editorial specification aesthetic
+ *
+ * https://github.com/opensciencearchive/design
+ */
+
+@import './tokens/index.css';
+@import './base/index.css';
+@import './prose/index.css';
+@import './components/index.css';

@@ -1,0 +1,281 @@
+/*
+ * OSA Design System — Article/Prose Styles
+ * Long-form content styling for specifications, RFCs, documentation
+ *
+ * Usage: Add class="prose" to your article container
+ */
+
+/* H1 - Section titles, sticky */
+.prose h1 {
+  position: sticky;
+  top: 0;
+  background: var(--color-bg);
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 calc(var(--space-12) * -1);
+  padding: var(--space-8) var(--space-12);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  z-index: 10;
+}
+
+/* Fade effect at bottom of sticky header */
+.prose h1::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, var(--color-bg), transparent);
+  pointer-events: none;
+}
+
+/* H2 - Major subsections */
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: var(--space-20);
+  margin-bottom: var(--space-6);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+/* H3 - Sub-subsections */
+.prose h3 {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+}
+
+/* H4 - Labels/categories */
+.prose h4 {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Paragraphs */
+.prose > p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+/* Lists */
+.prose > ul,
+.prose > ol {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+}
+
+.prose li {
+  margin-bottom: var(--space-2);
+}
+
+.prose li ul,
+.prose li ol {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+/* Inline code */
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+
+/* Code blocks */
+.prose pre {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  padding: var(--space-5);
+  border-radius: 3px;
+  overflow-x: auto;
+  margin: var(--space-6) 0;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Definition lists */
+.prose dl {
+  margin: var(--space-6) 0;
+}
+
+.prose dt {
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: var(--space-4);
+}
+
+.prose dd {
+  margin-left: var(--space-6);
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+}
+
+/* Tables */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-6) 0;
+  font-size: var(--text-sm);
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  padding: var(--space-3) var(--space-4) var(--space-3) 0;
+  vertical-align: top;
+}
+
+.prose th {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prose td {
+  color: var(--color-text);
+}
+
+.prose tr + tr td {
+  padding-top: var(--space-4);
+}
+
+/* Links */
+.prose a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+/* Section anchors - need enough margin to clear sticky h1 */
+.prose h1[id] {
+  scroll-margin-top: 1px;
+}
+
+.prose h2[id],
+.prose h3[id] {
+  scroll-margin-top: 100px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Responsive Styles
+   ═══════════════════════════════════════════════════════════ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .prose h1 {
+    font-size: var(--text-3xl);
+    margin: 0 calc(var(--space-8) * -1);
+    padding: var(--space-6) var(--space-8);
+  }
+
+  .prose h2 {
+    font-size: var(--text-xl);
+    margin-top: var(--space-16);
+  }
+
+  .prose h3 {
+    font-size: var(--text-lg);
+    margin-top: var(--space-10);
+  }
+
+  .prose h4 {
+    font-size: var(--text-sm);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .prose h1 {
+    font-size: 24px;
+    margin: 0 -20px;
+    padding: var(--space-5) 20px;
+  }
+
+  .prose h1::after {
+    height: 12px;
+    bottom: -12px;
+  }
+
+  .prose h2 {
+    font-size: 20px;
+    margin-top: var(--space-12);
+  }
+
+  .prose h3 {
+    font-size: 16px;
+    margin-top: var(--space-8);
+  }
+
+  .prose h4 {
+    font-size: 11px;
+  }
+
+  .prose h2[id],
+  .prose h3[id] {
+    scroll-margin-top: 70px;
+  }
+
+  .prose > p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .prose > ul,
+  .prose > ol {
+    font-size: 15px;
+    padding-left: var(--space-5);
+  }
+
+  .prose pre {
+    font-size: 13px;
+    padding: var(--space-4);
+    margin: var(--space-4) -20px;
+    border-radius: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .prose code {
+    font-size: 0.85em;
+    word-break: break-word;
+  }
+
+  .prose table {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+}

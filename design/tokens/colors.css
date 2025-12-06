@@ -1,0 +1,26 @@
+/*
+ * OSA Design System — Color Tokens
+ * Monochrome foundation with sage green accent
+ */
+
+:root {
+  /* Backgrounds */
+  --color-bg: hsl(0, 0%, 100%);
+  --color-bg-alt: hsl(0, 0%, 97%);
+  --color-bg-elevated: hsl(0, 0%, 100%);
+
+  /* Text */
+  --color-text: hsl(0, 0%, 5%);
+  --color-text-muted: hsl(0, 0%, 38%);
+  --color-text-subtle: hsl(0, 0%, 64%);
+
+  /* Accent — Sage green, laboratory precision */
+  --color-accent: hsl(160, 25%, 55%);
+  --color-accent-hover: hsl(160, 35%, 35%);
+  --color-accent-subtle: hsl(160, 25%, 85%);
+  --color-accent-muted: hsl(160, 25%, 75%);
+
+  /* Borders */
+  --color-border: hsl(0, 0%, 88%);
+  --color-border-subtle: hsl(0, 0%, 94%);
+}

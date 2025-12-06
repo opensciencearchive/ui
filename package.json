@@ -1,0 +1,35 @@
+{
+  "name": "@opensciencearchive/design",
+  "version": "0.1.0",
+  "description": "Design system for Open Science Archive — editorial specification aesthetic",
+  "type": "module",
+  "main": "./design/index.css",
+  "exports": {
+    ".": "./design/index.css",
+    "./tokens": "./design/tokens/index.css",
+    "./tokens/*": "./design/tokens/*.css",
+    "./base": "./design/base/index.css",
+    "./base/*": "./design/base/*.css",
+    "./prose": "./design/prose/index.css",
+    "./prose/*": "./design/prose/*.css",
+    "./components": "./design/components/index.css",
+    "./components/*": "./design/components/*.css",
+    "./fonts": "./design/fonts/index.css"
+  },
+  "files": [
+    "design"
+  ],
+  "keywords": [
+    "design-system",
+    "css",
+    "tokens",
+    "open-science-archive",
+    "specification"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opensciencearchive/design.git"
+  },
+  "license": "MIT",
+  "author": "Open Science Archive"
+}

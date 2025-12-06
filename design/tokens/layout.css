@@ -1,0 +1,11 @@
+/*
+ * OSA Design System — Layout Tokens
+ * Content widths and page structure
+ */
+
+:root {
+  --content-width: 42rem;        /* 672px — optimal reading width */
+  --content-width-wide: 56rem;   /* 896px — wide content */
+  --margin-width: 14rem;         /* 224px — side margin notes */
+  --page-padding: var(--space-6);
+}

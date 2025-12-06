@@ -1,0 +1,42 @@
+/*
+ * OSA Design System — Callout Component
+ * Information boxes for notes, warnings, tips, etc.
+ *
+ * Usage:
+ *   <aside class="callout">
+ *     <span class="callout-label">Note</span>
+ *     <div class="callout-content">...</div>
+ *   </aside>
+ *
+ * Variants: .callout-note, .callout-warning, .callout-important, .callout-tip
+ */
+
+.callout {
+  margin: var(--space-8) 0;
+}
+
+.callout-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  margin-bottom: var(--space-2);
+}
+
+.callout-content {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.callout-content p {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.callout-content p:last-child {
+  margin-bottom: 0;
+}
