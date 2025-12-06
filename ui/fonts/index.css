@@ -4,9 +4,6 @@
  * DM Serif Display — Display/heading font
  * Inter — Body/UI font
  * JetBrains Mono — Code font
- *
- * Note: Paths are relative to this CSS file's location.
- * Vite/Astro will resolve these correctly during build.
  */
 
 /* DM Serif Display */
@@ -15,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('dm-serif-display-400.woff2') format('woff2');
+  src: url('@opensciencearchive/ui/fonts/dm-serif-display-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -23,7 +20,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('dm-serif-display-400-italic.woff2') format('woff2');
+  src: url('@opensciencearchive/ui/fonts/dm-serif-display-400-italic.woff2') format('woff2');
 }
 
 /* Inter */
@@ -32,7 +29,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('inter-400.woff2') format('woff2');
+  src: url('@opensciencearchive/ui/fonts/inter-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -40,7 +37,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('inter-500.woff2') format('woff2');
+  src: url('@opensciencearchive/ui/fonts/inter-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -48,7 +45,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('inter-600.woff2') format('woff2');
+  src: url('@opensciencearchive/ui/fonts/inter-600.woff2') format('woff2');
 }
 
 /* JetBrains Mono */
@@ -57,7 +54,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('jetbrains-mono-400.woff2') format('woff2');
+  src: url('@opensciencearchive/ui/fonts/jetbrains-mono-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -65,5 +62,5 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('jetbrains-mono-500.woff2') format('woff2');
+  src: url('@opensciencearchive/ui/fonts/jetbrains-mono-500.woff2') format('woff2');
 }
