@@ -8,6 +8,42 @@ Design system for [Open Science Archive](https://opensciencearchive.org) — an 
 pnpm add github:opensciencearchive/ui
 ```
 
+## Vite Configuration
+
+Add this alias to your Vite config to enable font loading:
+
+```js
+// vite.config.js
+import { defineConfig } from 'vite';
+import path from 'path';
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '~@opensciencearchive/ui': path.resolve(__dirname, './node_modules/@opensciencearchive/ui/ui'),
+    },
+  },
+});
+```
+
+For Astro projects:
+
+```js
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
+import path from 'path';
+
+export default defineConfig({
+  vite: {
+    resolve: {
+      alias: {
+        '~@opensciencearchive/ui': path.resolve(__dirname, './node_modules/@opensciencearchive/ui/ui'),
+      },
+    },
+  },
+});
+```
+
 ## Usage
 
 Import everything:
