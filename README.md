@@ -1,11 +1,11 @@
-# OSA Design System
+# OSA UI System
 
 Design system for [Open Science Archive](https://opensciencearchive.org) — an editorial specification aesthetic with monochrome foundation and sage green accents.
 
 ## Installation
 
 ```bash
-pnpm add github:opensciencearchive/design
+pnpm add github:opensciencearchive/ui
 ```
 
 ## Usage
@@ -13,27 +13,27 @@ pnpm add github:opensciencearchive/design
 Import everything:
 
 ```css
-@import '@opensciencearchive/design';
+@import '@opensciencearchive/ui';
 ```
 
 Or import specific parts:
 
 ```css
 /* Just tokens */
-@import '@opensciencearchive/design/tokens';
+@import '@opensciencearchive/ui/tokens';
 
 /* Just prose/article styles */
-@import '@opensciencearchive/design/prose';
+@import '@opensciencearchive/ui/prose';
 
 /* Individual token files */
-@import '@opensciencearchive/design/tokens/colors.css';
-@import '@opensciencearchive/design/tokens/typography.css';
+@import '@opensciencearchive/ui/tokens/colors.css';
+@import '@opensciencearchive/ui/tokens/typography.css';
 ```
 
 ## Structure
 
 ```
-design/
+ui/
 ├── index.css           # Main entry point
 ├── tokens/             # Design tokens (CSS custom properties)
 │   ├── colors.css      # Color palette
@@ -66,7 +66,7 @@ This design system uses three typefaces:
 
 You can either:
 
-1. **Self-host** (recommended): Import `@opensciencearchive/design/fonts`
+1. **Self-host** (recommended): Import `@opensciencearchive/ui/fonts`
 2. **Google Fonts**: Add to your HTML `<head>`:
 
 ```html
