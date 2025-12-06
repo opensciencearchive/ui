@@ -1,23 +1,23 @@
 {
-  "name": "@opensciencearchive/design",
+  "name": "@opensciencearchive/ui",
   "version": "0.1.0",
   "description": "Design system for Open Science Archive — editorial specification aesthetic",
   "type": "module",
-  "main": "./design/index.css",
+  "main": "./ui/index.css",
   "exports": {
-    ".": "./design/index.css",
-    "./tokens": "./design/tokens/index.css",
-    "./tokens/*": "./design/tokens/*.css",
-    "./base": "./design/base/index.css",
-    "./base/*": "./design/base/*.css",
-    "./prose": "./design/prose/index.css",
-    "./prose/*": "./design/prose/*.css",
-    "./components": "./design/components/index.css",
-    "./components/*": "./design/components/*.css",
-    "./fonts": "./design/fonts/index.css"
+    ".": "./ui/index.css",
+    "./tokens": "./ui/tokens/index.css",
+    "./tokens/*": "./ui/tokens/*.css",
+    "./base": "./ui/base/index.css",
+    "./base/*": "./ui/base/*.css",
+    "./prose": "./ui/prose/index.css",
+    "./prose/*": "./ui/prose/*.css",
+    "./components": "./ui/components/index.css",
+    "./components/*": "./ui/components/*.css",
+    "./fonts": "./ui/fonts/index.css"
   },
   "files": [
-    "design"
+    "ui"
   ],
   "keywords": [
     "design-system",
@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/opensciencearchive/design.git"
+    "url": "https://github.com/opensciencearchive/ui.git"
   },
   "license": "MIT",
   "author": "Open Science Archive"
